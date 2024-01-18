@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detona Ralph</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="menu-time">
+          <h2 style="color: red">Time Left</h2>
+          <h2 id="time-left">0</h2>
+        </div>
+        <div class="menu-score">
+          <h2 style="color: red">Your Score</h2>
+          <h2 id="score">0</h2>
+        </div>
+        <div class="menu-lives">
+          <img
+            src="./src/images/player.png"
+            alt="foto do jogador"
+            height="60px"
+          />
+          <h2 id="lives">x3</h2>
+        </div>
+        <div class="restart-btn">
+          <button id="restart" type="button">Restart</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-row">
+          <div class="square enemy" id="1"></div>
+          <div class="square" id="2"></div>
+          <div class="square" id="3"></div>
+        </div>
+
+        <div class="panel-row">
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+        </div>
+
+        <div class="panel-row">
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+        </div>
+      </div>
+
+      <div class="instructions">
+        <h3>Como jogar:</h3>
+        <p>Você precisa clicar no Ralph sempre que ele aparecer!</p>
+        <p>No total você terá 10 segundos. Mas se liga:</p>
+        <p>
+          -> se aos 9s você tiver score igual a 0, você perde 1 vida;<br />
+          -> se aos 7s o score for menor que 4, menos 1 vida novamente;<br />
+          -> se aos 6s o score for menor que 6, menos 1 vida;<br />
+          -> se aos 2s o score for menor que 12, menos 1 vida (se for 0,
+          continua 0)
+        </p>
+        <p>
+          Se no final do tempo você tiver 0 vidas e score menor que 18, é Game
+          Over! :( <br />Mas se seu score for acima de 18, você ganha o jogo! :D
+        </p>
+        <p></p>
+        <p>
+          Você também tem chances de ganhar com qualquer score, mas precisa ter
+          pelo menos 1 vida!
+        </p>
+      </div>
+    </div>
+
+    <script defer src="./src/scripts/engine.js"></script>
+  </body>
+</html>
