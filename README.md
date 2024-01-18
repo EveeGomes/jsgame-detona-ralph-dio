@@ -22,7 +22,7 @@ As an exercise I thought of how to make it a bit more competitive. I created som
 
 ### How to play 🕹️
 
-You'll have 10 seconds in total to click on Ralph everytime it appears in any of the squares.
+You'll have 10 seconds in total to click on Ralph everytime it appears in any of the squares. Can you make 20 points? 😃
 
 **How to win?**  
 Finish the game with 1 or more lives, so the score won't matter. However, there will be some "checkpoints" where you'll lose lives if you don't reach a certain score:
