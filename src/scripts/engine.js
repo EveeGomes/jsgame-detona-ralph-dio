@@ -8,7 +8,7 @@ const state = {
     restartBtn: document.querySelector("#restart"),
   },
   value: {
-    timerId: null, // this could also work as an action by replacing the neeed of moveEnemy() function and use only: timerId: setInterval(randomSquare, 1000)
+    timerId: null,
     gameVelocity: 500,
     hitPosition: 0,
     result: 0,
@@ -17,7 +17,6 @@ const state = {
   },
   actions: {
     check: console.log("actions"),
-    //timerId: setInterval(randomSquare, 1000), // enemy's location!
     countDownTimerId: setInterval(countDown, 1000),
     resultLives: setInterval(countLives, 1000),
   },
@@ -63,7 +62,7 @@ function countDown() {
 
     // clear the intervals from memory to reset the calls
     clearInterval(state.actions.countDownTimerId);
-    clearInterval(state.value.timerId); //will this work without making it an actions attribute?
+    clearInterval(state.value.timerId);
   }
 }
 
@@ -82,15 +81,8 @@ function randomSquare() {
   state.value.hitPosition = randomSquare.id;
 }
 
-// function playSound() {
-//   let audio = new Audio("./src/audios/audios/hit.m4a");
-//   audio.volume = 0.2;
-//   audio.play();
-// }
-
-// to make this function reusable (dynamic) in case there's more audios!
 function playSound(audioName) {
-  let audio = new Audio(`./src/audios/audios/${audioName}.m4a`);
+  let audio = new Audio(`./src/audios/${audioName}.m4a`);
   audio.volume = 0.2;
   audio.play();
 }
@@ -118,12 +110,3 @@ function init() {
 }
 
 window.addEventListener("load", init);
-
-// init();
-// console.log("after init");
-if (state.value.numberLives === 0) {
-  console.log("here");
-}
-// while (state.value.numberLives) {
-//   init();
-// }
