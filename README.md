@@ -20,7 +20,7 @@ At the end of the lesson I had the basic functionalities of the game:
 
 As an exercise I thought of how to make it a bit more competitive. I created some **rules** that as the time decreases there will be some "checkpoints" and the player needs a certain amout of points to avoid losing lives! I also added a **Restart Button** so the user doesn't need to reload the page when the game ends, and the **Instructions** (in PT-BR).
 
-### How to play 🕹️
+### How to play
 
 You'll have 10 seconds in total to click on Ralph everytime it appears in any of the squares. Can you make 20 points? 😃
 
@@ -34,6 +34,8 @@ Finish the game with 1 or more lives, so the score won't matter. However, there 
    If at this point there's no lives left, the game still continues and you still have chances to win!
 
 Now, if you end up without lives, you can still win if you reach a score equal or greater than 18. 😌
+
+[**Click here to play**](https://velvety-semolina-e6bab6.netlify.app/) 🕹️
 
 ### Credits
 
